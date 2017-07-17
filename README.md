@@ -1,1 +1,2 @@
-My site 
+My blog/portfolio.
+In progress... 
