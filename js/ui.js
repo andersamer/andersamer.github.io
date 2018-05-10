@@ -1,5 +1,7 @@
 function print(str, md=true) {
-    if(md) { var txt = marked(str) }
+    var txt;
+    if(md) { txt = marked(str) }
+    else { txt = str }
     $txt.append(txt);
 }
 
