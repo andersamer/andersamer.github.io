@@ -1,10 +1,20 @@
 let commands = [];
 
 function initCommands() {
-    let ver = new Command("ver", "Shows the version of the program.", null, (args) => {
+    let ver = new Command("ver", "Shows the version of the site.", null, (args) => {
         println("*" + VERSION + "*");
     });
 
+    let exit = new Command("exit", "Closes the site.", null, (args) => {
+        window.close();
+    }
+                           
+    let echo = new Command("echo", "Displays text on the screen.", ["string"], (args) => {
+        if(args.length != 0) {
+            println(args.join(" "));
+        }
+    }
+    
     let help = new Command("help", "Lists all commands and provides documentation for specific commands.", ["command", "w"], (args) => {
         if(args.length > 0) {
             let temp;
