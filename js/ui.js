@@ -1,10 +1,10 @@
-function print(str) {
-    var txt = marked(str);
+function print(str, md=true) {
+    if(md) { var txt = marked(str) }
     $txt.append(txt);
 }
 
-function println(str) {
-    print(str);
+function println(str, md) {
+    print(str, md);
     $txt.append($("<br>"));
 }
 
