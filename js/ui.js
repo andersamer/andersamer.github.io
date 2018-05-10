@@ -19,7 +19,7 @@ function initInput() {
             $input.val("");
             
             if(str != "") {   
-                println(str);
+                println(str, false);
                 println("");
                 parseCommand(str);
             }
