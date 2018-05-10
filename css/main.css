@@ -1,0 +1,26 @@
+html, body {
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0.1em;
+    font-family: Consolas;
+    display: inline;
+}
+
+strong { font-weight: 1000; }
+
+input {
+    font-size: 14px;
+    font-family: Consolas;
+    min-width: 100%;
+    border: 0px;
+    box-shadow: none;
+    background-color: #000;
+    color: #fff;
+}
+
+p { margin: 0; display: inline; }
+
+img { max-width: 1500px; max-height: 1500px;}
