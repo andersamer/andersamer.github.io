@@ -2,7 +2,7 @@ function print(str, md=true) {
     var txt;
     if(md) { txt = marked(str) }
     else { txt = str }
-    $txt.append(txt);
+    $txt.html($txt.html() + str);
 }
 
 function println(str, md) {
