@@ -3,9 +3,9 @@ function initCommands() {
         println("*" + VERSION + "*");
     });
 
-    let exit = new Command("exit", "Closes the site.", null, (args) => {
-        window.close();
-    });
+    // let exit = new Command("exit", "Closes the site.", null, (args) => {
+    //     window.close();
+    // });
                            
     let echo = new Command("echo", "Displays text on the screen.", ["string"], (args) => {
         if(args.length != 0) {
